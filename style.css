@@ -1,0 +1,71 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #454545;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Add this to stack children vertically */
+    justify-content: flex-start; /* Adjust this if needed */
+}
+
+
+.chat-container {
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.logo-container {
+    width: 200px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center; /* Center logo horizontally */
+    align-items: center; /* Center logo vertically */
+    border-radius: 10px; /* Optional: rounded corners for the container */
+    margin: 10px; /* Optional: margin around the container */
+}
+
+#companyLogo {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto; /* This ensures the aspect ratio is maintained */
+    align-items: center; /* Center logo vertically */
+}
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.user-input, .send-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.user-input {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: none;
+}
+
+.send-button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .chat-box {
+        height: 200px;
+    }
+}
